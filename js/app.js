@@ -18,20 +18,20 @@ if (favHobby === 'yes' || favHobby === 'y') {
 // Question 3
 var justRelax = prompt('Is relaxing necessary for you each day?').toLocaleLowerCase();
 if (justRelax === 'yes' || justRelax === 'y') {
-  //console.log('Yes! If I do not have a chance to relax I will not be able to charge my battery');
-  alert('Yes! If I do not have a chance to relax I will not be able to charge my battery');
+  //console.log('Yes! If you do not have a chance to relax you might not be able to re-charge your battery');
+  alert('Yes! If you do not have a chance to relax you might not be able to re-charge your battery');
 }
 // Question 4
 var getReady = prompt('Do you like road trips?').toLocaleLowerCase();
 if (getReady === 'yes' || getReady === 'y') {
-  //console.log('Yes! A chance to road trip is a chance to see life from a different point of view than my original viewpoint.');
-  alert('Yes! A chance to road trip is a chance to see life from a different point of view than my original viewpoint.');
+  //console.log('Yes! A chance to road trip is a chance to see life from a different point of view other than your original viewpoint.');
+  alert('Yes! A chance to road trip is a chance to see life from a different point of view other than your original viewpoint.');
 }
 // Question 5
 var tripLocation = prompt('Would you like to drive along the coast?').toLocaleLowerCase();
 if (tripLocation === 'yes' || tripLocation === 'y') {
-  //console.log('Yes! The coast would be gorgeous.');
-  alert('Yes! The coast would be gorgeous.');
+  //console.log('Yes! The coast is gorgeous.');
+  alert('Yes! The coast is gorgeous.');
 }
 
-alert('Thanks' + userName + 'for visiting my site');
+alert('Thanks ' + userName + ' for visiting my site');
