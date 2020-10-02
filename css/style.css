@@ -1,0 +1,14 @@
+body {
+  background-color:rgb(135, 205, 222);
+}
+
+h1 {
+  background-color: rgb(171, 171, 182);
+  color: black;
+
+  p {
+    padding: 12px;
+  }
+
+
+
