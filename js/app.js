@@ -41,10 +41,10 @@ if (tripLocation === 'yes' || tripLocation === 'y') {
 }
 //Question 6
 var i = 0;
-var yourAttempt = 4;
+var guessMe = 4;
 
 while (i < 4) {
-  var guess = prompt('Guess a number from 1 to 4 please');
+  var guess = parseInt(prompt('Guess a number from 1 to 4 please'));
 
   if (guess > 3) {
     alert('Sorry, that number is too high');
@@ -54,19 +54,19 @@ while (i < 4) {
     alert('Sorry, that number is too low');
   }
 
-  else if (guess = 3) {
+  else if (guess === 3) {
     alert('Correct! You guessed the right number');
     points++;
     break;
   }
 
   i++;
-  if (i === yourAttempt) {
+  if (i === guessMe) {
     alert('Sorry you maxed out your attempt, the correct answer was 3');
   }
 }
 
-// Question 7
+//Question 7
 var yourAttempt = 6;
 var bestSoup = ['cheese','clam chowder','fish','gumbo','chicken noodle'];
 var makeGuess = prompt('Try to guess some of my favorite soups!').toLowerCase();
@@ -76,8 +76,8 @@ while (yourAttempt > 0 && !correctGuess) {
   yourAttempt--;
 
   //made the correct guess
-  for (i < correctGuess.length; i++;) {
-    if (correctGuess[i] === makeGuess){
+  for (var j = 0; j < bestSoup.length; j++) {
+    if (bestSoup[j] === makeGuess){
       correctGuess = true;
       alert(`Exactly!  I love ${makeGuess}`); //Notice the back ticks make this work not single quotes 
       points++;
@@ -86,7 +86,7 @@ while (yourAttempt > 0 && !correctGuess) {
 
   // if wrong
   if (yourAttempt > 0 && !correctGuess) {
-    makeGuess = prompt(`No, I do not listen to ${makeGuess}`);
+    makeGuess = prompt('Guess again').toLowerCase();
   }
   // No more attempts
   if (yourAttempt === 0 && !correctGuess) {
@@ -95,8 +95,7 @@ while (yourAttempt > 0 && !correctGuess) {
 }
 
 
-
-alert(`Thanks for answering, your score was${points}`);
+alert(`Thanks for answering, your score was ${points}`);
 
 
 
