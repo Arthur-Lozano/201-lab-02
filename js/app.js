@@ -55,7 +55,7 @@ function questionFour() {
     alert('Yes! A chance to road trip is a chance to see life from a different point of view other than your original viewpoint.');
     points++;
   }
-  else if (justRelax === 'no' || justRelax === 'n') {
+  else if (getReady === 'no' || getReady === 'n') {
     alert('Road tripping isn\'t for everyone');
   }
 }
@@ -70,7 +70,7 @@ function questionFive() {
     alert('Yes! The coast is gorgeous.');
     points++;
   }
-  else if (justRelax === 'no' || justRelax === 'n') {
+  else if (tripLocation === 'no' || tripLocation === 'n') {
     alert('That is too bad, you could always drive inland as well.');
   }
 }
